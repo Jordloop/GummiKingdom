@@ -8,6 +8,9 @@
 <ul>
     @foreach (var listGummi in Model)
     {
-        <li>@Html.DisplayFor(modelItem => listGummi.Name)</li>
+        <li>
+            @Html.DisplayFor(modelItem => listGummi.Name) |
+            @Html.ActionLink("Details", "Details", new { id = listGummi.GummiId })
+        </li>
     }
 </ul>
