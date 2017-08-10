@@ -10,7 +10,9 @@
     {
         <li>
             @Html.DisplayFor(modelItem => listGummi.Name) |
-            @Html.ActionLink("Details", "Details", new { id = listGummi.GummiId })
+            @Html.ActionLink("Details", "Details", new { id = listGummi.GummiId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = listGummi.GummiId })
         </li>
     }
+    <p>@Html.ActionLink("Add new item", "Create")</p>
 </ul>
