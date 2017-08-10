@@ -10,6 +10,7 @@ namespace GummiBearKing.Models
         public int GummiId { get; set; }
         public string Name { get; set; }
         public string Origin { get; set; }
+        public int Cost { get; set; }
 
     }
 }

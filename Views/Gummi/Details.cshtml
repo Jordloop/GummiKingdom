@@ -5,7 +5,8 @@
 
 @model GummiBearKing.Models.Gummi
 
-<h3>@Html.DisplayNameFor(model => model.Name)</h3>
+<h3>@Html.DisplayFor(model => model.Name)</h3>
 
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Origin)
+@Html.DisplayNameFor(model => model.Origin): @Html.DisplayFor(model => model.Origin) <br/>
+@Html.DisplayNameFor(model => model.Cost): $@Html.DisplayFor(model => model.Cost)
 <p>@Html.ActionLink("Back to list", "Index")</p>

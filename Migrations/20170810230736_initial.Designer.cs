@@ -8,8 +8,8 @@ using GummiBearKing.Models;
 namespace GummiBearKing.Migrations
 {
     [DbContext(typeof(GummiDbContext))]
-    [Migration("20170808161353_Initial")]
-    partial class Initial
+    [Migration("20170810230736_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,6 +21,8 @@ namespace GummiBearKing.Migrations
                 {
                     b.Property<int>("GummiId")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Cost");
 
                     b.Property<string>("Name");
 
