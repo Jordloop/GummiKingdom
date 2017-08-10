@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GummiBearKing.Models.Gummi
+
+
+<h4>Add new Gummi</h4>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+     
+    @Html.LabelFor(model => model.Origin)
+    @Html.TextBoxFor(model => model.Origin)
+
+    @Html.LabelFor(model => model.Cost)
+    @Html.TextBoxFor(model => model.Cost)
+    <input type="submit" value="Add new task" />
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>
